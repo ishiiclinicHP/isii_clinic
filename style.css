@@ -2278,16 +2278,15 @@ img {
 
   .table-wrap {
     width: 100% !important;
-    max-width: 100% !important;
     overflow-x: auto !important;
     overflow-y: hidden !important;
-    -webkit-overflow-scrolling: touch;
   }
 
   .hours-table {
     width: 640px !important;
     min-width: 640px !important;
     table-layout: fixed !important;
+    font-size: 0.88rem !important;
   }
 
 }
