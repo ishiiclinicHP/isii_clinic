@@ -2281,3 +2281,29 @@ img {
         height: auto;
     }
 }
+
+@media screen and (max-width: 768px) {
+
+  /* 診療時間・アクセスを縦並び */
+  .clinic-info {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+
+  /* カードが表に引っ張られないようにする */
+  .info-card {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  /* 診療時間表は横スクロール可能にする */
+  .info-card:first-child {
+    overflow: hidden;
+  }
+
+  .hours-table {
+    min-width: 640px;
+  }
+
+}
