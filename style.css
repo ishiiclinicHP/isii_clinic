@@ -2261,3 +2261,33 @@ img {
   }
 
 }
+
+@media screen and (max-width: 768px) {
+
+  .clinic-info {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+
+  .info-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .table-wrap {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .hours-table {
+    width: 640px !important;
+    min-width: 640px !important;
+    table-layout: fixed !important;
+  }
+
+}
