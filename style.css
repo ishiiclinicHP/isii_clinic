@@ -2222,7 +2222,6 @@ img {
 .clinic-map-wrap {
   margin-top: 32px;
   border-radius: var(--radius);
-  overflow: hidden;
   border: 1px solid var(--border-color);
   box-shadow: var(--shadow);
 }
@@ -2237,80 +2236,8 @@ img {
   height: 240px !important;
 }
 
-/* スマホ対応 */
 @media screen and (max-width: 768px) {
 
-    body {
-        width: 100%;
-        overflow-x: hidden;
-    }
-
-    .container {
-        width: 100%;
-        max-width: 100%;
-        padding: 0 20px;
-        box-sizing: border-box;
-    }
-
-    /* 診療時間・アクセスを縦並びにする */
-    .access-wrap,
-    .access-container,
-    .schedule-access {
-        display: block;
-        width: 100%;
-    }
-
-    /* 各ボックス */
-    .schedule,
-    .access {
-        width: 100%;
-        box-sizing: border-box;
-        margin-bottom: 30px;
-    }
-
-    /* 表を画面内に収める */
-    table {
-        width: 100%;
-        max-width: 100%;
-        font-size: 13px;
-    }
-
-    /* 画像 */
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-}
-
-@media screen and (max-width: 768px) {
-
-  /* 診療時間・アクセスを縦並び */
-  .clinic-info {
-    display: grid !important;
-    grid-template-columns: 1fr !important;
-    gap: 20px !important;
-  }
-
-  /* カードが表に引っ張られないようにする */
-  .info-card {
-    width: 100% !important;
-    min-width: 0 !important;
-  }
-
-  /* 診療時間表は横スクロール可能にする */
-  .info-card:first-child {
-    overflow: hidden;
-  }
-
-  .hours-table {
-    min-width: 640px;
-  }
-
-}
-
-@media screen and (max-width: 768px) {
-
-  /* 診療時間とアクセスは縦並び */
   .clinic-info {
     display: grid !important;
     grid-template-columns: 1fr !important;
@@ -2320,41 +2247,17 @@ img {
   .info-card {
     width: 100% !important;
     min-width: 0 !important;
-    padding: 20px 12px !important;
   }
 
-  /* 診療時間表をスマホ幅に収める */
+  .table-wrap {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
   .hours-table {
-    width: 100% !important;
-    min-width: 0 !important;
-    table-layout: fixed !important;
-    font-size: 11px !important;
+    width: 640px !important;
+    min-width: 640px !important;
   }
 
-  .hours-table th,
-  .hours-table td {
-    height: 48px !important;
-    padding: 5px 2px !important;
-  }
-
-  /* 「時間」列だけ少し広く */
-  .hours-table thead th:first-child {
-    width: 72px !important;
-  }
-
-  .period-name {
-    font-size: 11px !important;
-  }
-
-  .period-time {
-    font-size: 9px !important;
-  }
-
-  .hours-table thead th {
-    font-size: 10px !important;
-  }
-
-  .hours-table td {
-    font-size: 12px !important;
-  }
 }
