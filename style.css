@@ -452,12 +452,6 @@ img {
 
 }
 
-
-
-.hero-content {
-
-  min-width: 0;
-
 }
 
 
@@ -2271,8 +2265,7 @@ img {
   }
 
   .info-card {
-    width: 100% !important;
-    min-width: 0 !important;
+
     box-sizing: border-box !important;
   }
 
