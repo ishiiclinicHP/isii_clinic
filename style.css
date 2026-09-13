@@ -2119,7 +2119,7 @@ img {
 /* スマートフォン対応 */
 @media (max-width: 768px) {
   .doctor-layout {
-    flex-direction: column !important; /* スマホでは縦並び（上が写真、下がテキスト） */
+    flex-direction: column !important;
     align-items: center;
     padding: 24px 20px;
     gap: 24px;
@@ -2128,7 +2128,6 @@ img {
   .doctor-photo-wrap {
     width: 220px !important;
   }
-}
 
   .doctor-name-bar {
     flex-wrap: wrap;
@@ -2147,6 +2146,7 @@ img {
   .career-year {
     width: 70px;
   }
+}
 
 /* 院長写真のサイズを強制固定 */
 .doctor-photo-wrap {
@@ -2190,89 +2190,60 @@ img {
   line-height: 1.2;
 }
 /* =========================
-   アクセス領域の横幅を広げる
+   診療時間・アクセス調整
 ========================= */
+
+/* PC：診療時間とアクセスを2列で表示 */
 .clinic-info {
-  /* 診療時間とアクセスの幅をほぼ均等（1.1 : 1）にしてアクセス側を広くする */
-  grid-template-columns: 1.1fr 1fr !important;
+  grid-template-columns: minmax(0, 1.1fr) minmax(300px, 1fr);
+  align-items: start;
 }
 
-/* 住所や文字が途中で変に改行されるのを防止 */
+/* 住所などはカード内で自然に折り返す */
 .access-list li {
-  word-break: break-all;
+  overflow-wrap: anywhere;
+  word-break: normal;
 }
 
-/* =========================
-   診療時間・アクセスのレイアウト整頓
-========================= */
-
-/* 2つの枠の高さを自動で揃えて均等幅にする */
-.clinic-info {
-  grid-template-columns: 1fr 1fr !important;
-  align-items: stretch !important;
-}
-
-/* 下部に配置したGoogleマップの枠設定 */
+/* Googleマップ */
 .clinic-map-wrap {
   margin-top: 32px;
   border-radius: var(--radius);
   border: 1px solid var(--border-color);
   box-shadow: var(--shadow);
+  overflow: hidden;
 }
 
 .clinic-map-wrap iframe {
   display: block;
   width: 100%;
-}
-
-/* マップの高さを薄くしてすっきり見せる */
-.clinic-map-wrap iframe {
   height: 240px !important;
 }
 
+/* =========================
+   診療時間・アクセス：スマートフォン
+========================= */
 @media screen and (max-width: 768px) {
-
   .clinic-info {
     display: grid !important;
     grid-template-columns: 1fr !important;
     gap: 20px !important;
+    align-items: start !important;
   }
 
   .info-card {
     width: 100% !important;
     min-width: 0 !important;
-  }
-
-  .table-wrap {
-    width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  .hours-table {
-    width: 640px !important;
-    min-width: 640px !important;
-  }
-
-}
-
-@media screen and (max-width: 768px) {
-
-  .clinic-info {
-    display: grid !important;
-    grid-template-columns: 1fr !important;
-    gap: 20px !important;
-  }
-
-  .info-card {
-
     box-sizing: border-box !important;
   }
 
+  /* 診療時間の表だけ横スクロール */
   .table-wrap {
     width: 100% !important;
+    max-width: 100% !important;
     overflow-x: auto !important;
     overflow-y: hidden !important;
+    -webkit-overflow-scrolling: touch;
   }
 
   .hours-table {
@@ -2281,5 +2252,4 @@ img {
     table-layout: fixed !important;
     font-size: 0.88rem !important;
   }
-
 }
