@@ -2236,3 +2236,48 @@ img {
 .clinic-map-wrap iframe {
   height: 240px !important;
 }
+
+/* スマホ対応 */
+@media screen and (max-width: 768px) {
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    /* 診療時間・アクセスを縦並びにする */
+    .access-wrap,
+    .access-container,
+    .schedule-access {
+        display: block;
+        width: 100%;
+    }
+
+    /* 各ボックス */
+    .schedule,
+    .access {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 30px;
+    }
+
+    /* 表を画面内に収める */
+    table {
+        width: 100%;
+        max-width: 100%;
+        font-size: 13px;
+    }
+
+    /* 画像 */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
