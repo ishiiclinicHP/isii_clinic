@@ -2307,3 +2307,54 @@ img {
   }
 
 }
+
+@media screen and (max-width: 768px) {
+
+  /* 診療時間とアクセスは縦並び */
+  .clinic-info {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+
+  .info-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    padding: 20px 12px !important;
+  }
+
+  /* 診療時間表をスマホ幅に収める */
+  .hours-table {
+    width: 100% !important;
+    min-width: 0 !important;
+    table-layout: fixed !important;
+    font-size: 11px !important;
+  }
+
+  .hours-table th,
+  .hours-table td {
+    height: 48px !important;
+    padding: 5px 2px !important;
+  }
+
+  /* 「時間」列だけ少し広く */
+  .hours-table thead th:first-child {
+    width: 72px !important;
+  }
+
+  .period-name {
+    font-size: 11px !important;
+  }
+
+  .period-time {
+    font-size: 9px !important;
+  }
+
+  .hours-table thead th {
+    font-size: 10px !important;
+  }
+
+  .hours-table td {
+    font-size: 12px !important;
+  }
+}
