@@ -1353,8 +1353,12 @@ img {
   }
 }
 
-/* PC表示時：院長の写真を右側へ移動 */
+/* PCでは院長の内容を左、写真を右に配置 */
 @media screen and (min-width: 769px) {
+  .doctor-layout {
+    flex-direction: row;
+  }
+
   .doctor-content {
     order: 1;
   }
@@ -1363,14 +1367,8 @@ img {
     order: 2;
   }
 }
-/* PCでは院長写真を右側にする */
-@media screen and (min-width: 769px) {
-  .doctor-layout {
-    flex-direction: row-reverse;
-  }
-}
 
-/* スマートフォンでは縦並びに戻す */
+/* スマートフォンでは縦並び */
 @media screen and (max-width: 768px) {
   .doctor-layout {
     flex-direction: column;
