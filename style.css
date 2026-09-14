@@ -301,3 +301,105 @@ img {
   overflow: hidden;
   border-radius: 18px;
   box-shadow: 0 12px 
+
+/* =========================
+   PC表示のレイアウト修正
+========================= */
+
+@media screen and (min-width: 769px) {
+
+  /* 院長紹介：写真を右、文章を左 */
+  .doctor-layout {
+    display: flex !important;
+    flex-direction: row-reverse !important;
+    align-items: flex-start !important;
+    gap: 40px !important;
+    width: 100% !important;
+    max-width: 920px !important;
+    margin: 0 auto !important;
+    padding: 36px !important;
+  }
+
+  .doctor-photo-wrap {
+    width: 260px !important;
+    max-width: 260px !important;
+    flex: 0 0 260px !important;
+    margin: 0 !important;
+  }
+
+  .doctor-photo {
+    width: 260px !important;
+    max-width: 260px !important;
+  }
+
+  .doctor-photo img {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    max-height: 360px !important;
+    object-fit: cover !important;
+  }
+
+  .doctor-content {
+    min-width: 0 !important;
+    flex: 1 1 auto !important;
+  }
+
+  /* 診療時間・アクセス：左右2列 */
+  .clinic-info {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1.25fr) minmax(300px, 0.85fr) !important;
+    gap: 28px !important;
+    width: 100% !important;
+    align-items: start !important;
+  }
+
+  .info-card {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  /* 診療時間表がカードからはみ出さないようにする */
+  .table-wrap {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: auto !important;
+  }
+
+  .hours-table {
+    width: 100% !important;
+    min-width: 0 !important;
+    table-layout: fixed !important;
+  }
+
+  /* 地図：カード下に横幅いっぱいで配置 */
+  .clinic-map-wrap {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 360px !important;
+    margin-top: 32px !important;
+    overflow: hidden !important;
+  }
+
+  .clinic-map-wrap iframe {
+    display: block !important;
+    width: 100% !important;
+    height: 360px !important;
+    border: 0 !important;
+  }
+
+  /* 外観写真 */
+  .hero-image {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+  }
+
+  .hero-image img {
+    display: block !important;
+    width: 100% !important;
+    height: 420px !important;
+    object-fit: cover !important;
+  }
+}
