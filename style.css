@@ -2253,3 +2253,34 @@ img {
     font-size: 0.88rem !important;
   }
 }
+
+/* ヘッダーの電話番号を改行させない */
+.header-contact {
+  flex-shrink: 0;
+  min-width: 225px;
+  white-space: nowrap;
+}
+
+.header-contact span,
+.header-contact a {
+  white-space: nowrap;
+}
+
+/* PCヘッダーの間隔を調整 */
+@media screen and (min-width: 769px) {
+  .site-header .container {
+    gap: 16px;
+  }
+
+  .global-nav ul {
+    gap: 13px;
+  }
+
+  .global-nav a {
+    font-size: 0.82rem;
+  }
+
+  .header-contact {
+    min-width: 225px;
+  }
+}
