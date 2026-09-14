@@ -1068,4 +1068,215 @@ img {
   }
 
   .global-nav {
-    margin-top: 14px
+    margin-top: 14px;
+  }
+
+  .global-nav ul {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6px 12px;
+  }
+
+  .global-nav a {
+    padding: 5px 0;
+    font-size: 0.78rem;
+  }
+
+  .global-nav .nav-reservation {
+    padding: 7px 12px;
+  }
+
+  .header-contact {
+    display: none;
+  }
+
+  .hero {
+    padding: 52px 0 40px;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero-label {
+    font-size: 0.75rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(1.8rem, 7vw, 2.35rem);
+  }
+
+  .hero-text {
+    font-size: 0.92rem;
+    text-align: left;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .hero-image img {
+    height: 280px;
+  }
+
+  .policy-grid,
+  .medical-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .clinic-info {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .info-card {
+    padding: 24px 18px;
+  }
+
+  .hours-table {
+    width: 640px;
+    min-width: 640px;
+  }
+
+  .doctor-layout {
+    flex-direction: column;
+    align-items: center;
+    padding: 26px 20px;
+    gap: 26px;
+  }
+
+  .doctor-photo-wrap {
+    width: 220px;
+    flex: 0 0 auto;
+  }
+
+  .doctor-name-bar {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .doctor-specialty {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .reservation-box {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 32px 24px;
+    text-align: center;
+  }
+
+  .reservation-box .section-title {
+    text-align: center;
+  }
+
+  .reservation-contact {
+    min-width: 0;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* =========================
+   小さいスマートフォン
+========================= */
+
+@media (max-width: 600px) {
+  .container {
+    width: min(100% - 32px, 1100px);
+  }
+
+  .section {
+    padding: 64px 0;
+  }
+
+  .news-box {
+    margin-top: 32px;
+    padding: 20px 18px;
+  }
+
+  .news-item {
+    grid-template-columns: 1fr;
+    gap: 5px;
+    padding-top: 10px;
+  }
+
+  .news-label {
+    width: fit-content;
+  }
+
+  .news-item p {
+    font-size: 0.85rem;
+  }
+
+  .flow {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    margin-top: 30px;
+  }
+
+  .flow-item {
+    min-height: auto;
+    padding: 24px 22px 24px 78px;
+    text-align: left;
+  }
+
+  .flow-item::before {
+    top: 50%;
+    left: 22px;
+    transform: translateY(-50%);
+  }
+
+  .flow-item h3 {
+    margin-bottom: 6px;
+  }
+
+  .flow-item p {
+    text-align: left;
+  }
+
+  .career-row {
+    grid-template-columns: 70px minmax(0, 1fr);
+    gap: 12px;
+    font-size: 0.84rem;
+  }
+
+  .reservation-tel {
+    font-size: 1.5rem;
+  }
+
+  .mobile-call-button {
+    position: fixed;
+    right: 14px;
+    bottom: 14px;
+    left: 14px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 54px;
+    color: var(--white);
+    background: var(--accent-color);
+    border-radius: 999px;
+    box-shadow: 0 8px 22px rgba(80, 50, 40, 0.22);
+    font-weight: bold;
+  }
+
+  body {
+    padding-bottom: 82px;
+  }
+}
