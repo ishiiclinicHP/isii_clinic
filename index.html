@@ -4,15 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>石井心療内科｜横浜市港北区の心療内科・精神科</title>
-  <meta name="description" content="横浜市港北区の石井心療内科。心療内科・精神科の診療を行っています。">
+  <title>石井心療内科｜精神科・心療内科</title>
+
+  <meta
+    name="description"
+    content="石井心療内科は横浜市港北区で地域医療に携わる精神科・心療内科です。患者さま一人ひとりのお話を伺い、その人らしい生き方を一緒に考える診療を心がけています。"
+  >
 
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- ヘッダー -->
   <header class="site-header">
     <div class="container header-inner">
 
@@ -30,8 +33,8 @@
           <li><a href="#medical">診療内容</a></li>
           <li><a href="#doctor">院長紹介</a></li>
           <li><a href="#access">アクセス</a></li>
-          <li>
-            <a href="danwashitu huu.html">談話室風</a>
+          <li class="nav-talk-room">
+            <a href="danwashitsu.html">談話室風</a>
           </li>
           <li>
             <a href="#reservation" class="nav-reservation">ご予約</a>
@@ -47,91 +50,80 @@
     </div>
   </header>
 
-
   <main>
 
     <!-- メインビジュアル -->
     <section class="hero">
-      <div class="container hero-grid">
-
-        <div class="hero-content">
-          <p class="hero-label">横浜市港北区の心療内科・精神科</p>
-
-          <h1>
-            ゆっくり話しましょう。<br>
-            答えが見つからなくても大丈夫です。
-          </h1>
-
-          <p class="hero-text">
-            不安なままでも、迷ったままでも、<br>
-            人は生きていくことができます。
-          </p>
-
-          <p class="hero-text">
-            石井心療内科では、薬だけではなく、
-            対話や関係性を大切にしています。
-            一人で抱え込まず、お気軽にご相談ください。
-          </p>
-
-          <div class="hero-buttons">
-            <a href="#reservation" class="button button-primary">
-              初診のご予約はこちら
-            </a>
-
-            <a href="first-visit.html" class="button button-secondary">
-              初めての方へ
-            </a>
-          </div>
-
-          <p class="hero-note">
-            ※WEB予約・LINE予約は現在対応しておりません。
-          </p>
-        </div>
-
-        <div class="hero-image">
-          <img
-            src="exterior.jpg"
-            alt="石井心療内科の外観"
-          >
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- お知らせ -->
-    <section class="news-section section" aria-labelledby="news-title">
       <div class="container">
 
-        <div class="section-heading">
-          <p class="section-label">NEWS</p>
-          <h2 id="news-title" class="section-title">お知らせ</h2>
+        <div class="hero-grid">
+
+          <div class="hero-content">
+            <p class="hero-label">横浜市港北区の心療内科・精神科</p>
+
+            <h1>
+              ゆっくり話しましょう。<br>
+              答えが見つからなくても大丈夫です。
+            </h1>
+
+            <p class="hero-text">
+              不安なままでも、迷ったままでも、<br>
+              人は生きていくことができます。
+            </p>
+
+            <p class="hero-text">
+              石井心療内科では、薬だけではなく、
+              対話や関係性を大切にしています。
+              一人で抱え込まず、お気軽にご相談ください。
+            </p>
+
+            <div class="hero-buttons">
+              <a href="#reservation" class="button button-primary">
+                初診のご予約はこちら
+              </a>
+
+              <a href="first-visit.html" class="button button-secondary">
+                初めての方へ
+              </a>
+            </div>
+
+            <p class="hero-note">
+              ※WEB予約・LINE予約は現在対応しておりません。
+            </p>
+          </div>
+
+          <div class="hero-image">
+            <img src="exterior.jpg" alt="石井心療内科の外観">
+          </div>
+
         </div>
 
-        <ul class="news-list">
-          <li class="news-item">
-            <time datetime="2026-09-10">2026.09.10</time>
-            <span class="news-label">お知らせ</span>
-            <a href="news.html">
-              ホームページを開設しました。
-            </a>
-          </li>
-        </ul>
+        <!-- お知らせ -->
+        <div class="news-box" aria-labelledby="news-title">
+          <div class="news-heading">
+            <h2 id="news-title">お知らせ</h2>
+            <span class="news-heading-line"></span>
+          </div>
 
-        <div class="center-button">
-          <a href="news.html" class="text-link">
-            お知らせ一覧を見る
-          </a>
+          <ul class="news-list">
+            <li class="news-item">
+              <time datetime="2026-09-10">2026.09.10</time>
+              <span class="news-label">お知らせ</span>
+              <p>ホームページを開設しました。</p>
+            </li>
+          </ul>
+
+          <div class="news-more">
+            <a href="news.html">お知らせ一覧を見る</a>
+          </div>
         </div>
 
       </div>
     </section>
-
 
     <!-- 当院について -->
     <section class="section about-section" id="about">
       <div class="container">
-
         <p class="section-label">ABOUT US</p>
         <h2 class="section-title">石井心療内科について</h2>
 
@@ -151,15 +143,12 @@
             その人らしい生き方を一緒に考える診療を心がけています。
           </p>
         </div>
-
       </div>
     </section>
-
 
     <!-- 診療方針 -->
     <section class="section policy-section">
       <div class="container">
-
         <p class="section-label">POLICY</p>
         <h2 class="section-title">当院の診療方針</h2>
 
@@ -169,7 +158,6 @@
         </p>
 
         <div class="policy-grid">
-
           <article class="policy-card">
             <span class="policy-number">01</span>
             <h3>お話を丁寧に伺います</h3>
@@ -196,17 +184,13 @@
               他の医療機関や相談機関をご案内します。
             </p>
           </article>
-
         </div>
-
       </div>
     </section>
-
 
     <!-- 初めての方へ -->
     <section class="section first-section" id="first">
       <div class="container">
-
         <p class="section-label">FIRST VISIT</p>
         <h2 class="section-title">初めての方へ</h2>
 
@@ -216,47 +200,35 @@
         </p>
 
         <div class="flow">
-
           <article class="flow-item">
             <span class="flow-number">01</span>
             <h3>ご予約</h3>
-            <p>
-              ご予約方法については、お電話でお問い合わせください。
-            </p>
+            <p>ご予約方法については、お電話でお問い合わせください。</p>
           </article>
 
           <article class="flow-item">
             <span class="flow-number">02</span>
             <h3>問診票</h3>
-            <p>
-              現在の症状やお困りごとをご記入いただきます。
-            </p>
+            <p>現在の症状やお困りごとをご記入いただきます。</p>
           </article>
 
           <article class="flow-item">
             <span class="flow-number">03</span>
             <h3>診察</h3>
-            <p>
-              医師がお話を伺い、状態を確認します。
-            </p>
+            <p>医師がお話を伺い、状態を確認します。</p>
           </article>
 
           <article class="flow-item">
             <span class="flow-number">04</span>
             <h3>ご説明</h3>
-            <p>
-              治療方針や今後の見通しについてご説明します。
-            </p>
+            <p>治療方針や今後の見通しについてご説明します。</p>
           </article>
 
           <article class="flow-item">
             <span class="flow-number">05</span>
             <h3>お会計</h3>
-            <p>
-              次回のご予約が必要な場合はご案内します。
-            </p>
+            <p>次回のご予約が必要な場合はご案内します。</p>
           </article>
-
         </div>
 
         <div class="center-button">
@@ -264,15 +236,12 @@
             初診の流れを詳しく見る
           </a>
         </div>
-
       </div>
     </section>
-
 
     <!-- 診療内容 -->
     <section class="section medical-section" id="medical">
       <div class="container">
-
         <p class="section-label">MEDICAL CARE</p>
         <h2 class="section-title">診療内容</h2>
 
@@ -282,7 +251,6 @@
         </p>
 
         <div class="medical-grid">
-
           <article class="medical-card">
             <h3>思春期外来</h3>
             <p>
@@ -313,26 +281,27 @@
               日常生活の中で感じるさまざまな不調についてご相談ください。
             </p>
           </article>
-
         </div>
 
         <p class="medical-note">
           ※対応内容については、事前にお電話でご確認ください。
         </p>
-
       </div>
     </section>
-
 
     <!-- 院長紹介 -->
     <section class="section doctor-section" id="doctor">
       <div class="container">
-
         <p class="section-label">DOCTOR</p>
         <h2 class="section-title">院長紹介</h2>
 
-        <div class="doctor-layout">
+        <div class="doctor-name-bar">
+          <span class="doctor-name-label">院長</span>
+          <strong>石井心療内科</strong>
+          <span class="doctor-specialty">精神科・心療内科</span>
+        </div>
 
+        <div class="doctor-layout">
           <div class="doctor-photo-wrap">
             <div class="doctor-photo">
               <img
@@ -344,13 +313,6 @@
           </div>
 
           <div class="doctor-content">
-
-            <div class="doctor-name-bar">
-              <span class="doctor-name-label">院長</span>
-              <strong>石井心療内科</strong>
-              <span class="doctor-specialty">精神科・心療内科</span>
-            </div>
-
             <div class="doctor-message">
               <p>
                 診療では、「しっかりとお話を伺う事」を何より大切にしています。
@@ -377,7 +339,6 @@
             </div>
 
             <div class="doctor-career">
-
               <div class="career-row">
                 <span class="career-year">昭和58年</span>
                 <span>北里大学卒</span>
@@ -402,228 +363,7 @@
                 <span class="career-year">平成11年</span>
                 <span>石井心療内科院長</span>
               </div>
-
             </div>
 
             <div class="doctor-subheading book-heading">
-              <h3>著書</h3>
-            </div>
-
-            <p class="doctor-book">
-              「ドリンカーズバイブル」
-            </p>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- 診療時間・アクセス -->
-    <section class="section access-section" id="access">
-      <div class="container">
-
-        <p class="section-label">ACCESS</p>
-        <h2 class="section-title">診療時間・アクセス</h2>
-
-        <p class="section-lead">
-          ご来院の前に、診療時間とアクセスをご確認ください。
-        </p>
-
-        <div class="clinic-info">
-
-          <!-- 診療時間 -->
-          <div class="info-card">
-            <h3>診療時間</h3>
-
-            <div class="table-wrap">
-              <table class="hours-table">
-                <caption class="visually-hidden">
-                  石井心療内科の診療時間
-                </caption>
-
-                <thead>
-                  <tr>
-                    <th scope="col">時間</th>
-                    <th scope="col">月</th>
-                    <th scope="col">火</th>
-                    <th scope="col">水</th>
-                    <th scope="col">木</th>
-                    <th scope="col">金</th>
-                    <th scope="col">土</th>
-                    <th scope="col">日・祝</th>
-                  </tr>
-                </thead>
-
-                <tbody>
-                  <tr>
-                    <th scope="row">
-                      <span class="period-name">午前</span>
-                      <span class="period-time">10:00〜12:30</span>
-                    </th>
-                    <td>●</td>
-                    <td>●</td>
-                    <td>●</td>
-                    <td>—</td>
-                    <td>●</td>
-                    <td>●</td>
-                    <td class="closed">—</td>
-                  </tr>
-
-                  <tr>
-                    <th scope="row">
-                      <span class="period-name">午後</span>
-                      <span class="period-time">15:00〜17:30</span>
-                    </th>
-                    <td>●</td>
-                    <td>●</td>
-                    <td class="closed">—</td>
-                    <td class="closed">—</td>
-                    <td>●</td>
-                    <td class="closed">—</td>
-                    <td class="closed">—</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <p class="hours-legend">
-              <span class="open-mark">●</span> 診療
-              <span class="closed-mark">—</span> 休診
-            </p>
-
-            <p class="table-note">
-              ※診療時間は変更になる場合があります。
-              休診日はお知らせをご確認ください。
-            </p>
-          </div>
-
-
-          <!-- アクセス -->
-          <div class="info-card">
-            <h3>アクセス</h3>
-
-            <ul class="access-list">
-              <li>
-                <strong>住所</strong>
-                <span>〒222-0012<br>神奈川県横浜市港北区富士塚1-14-28</span>
-              </li>
-
-              <li>
-                <strong>電話</strong>
-                <a href="tel:0454331420">045-433-1420</a>
-              </li>
-
-              <li>
-                <strong>最寄り駅</strong>
-                <span>妙蓮寺駅から徒歩約5分</span>
-              </li>
-
-              <li>
-                <strong>駐車場</strong>
-                <span>1台（予約必要）</span>
-              </li>
-            </ul>
-
-            <a
-              href="https://www.google.com/maps/search/?api=1&amp;query=神奈川県横浜市港北区富士塚1-14-28"
-              class="map-link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Googleマップで見る
-            </a>
-          </div>
-
-        </div>
-
-
-        <!-- Googleマップ -->
-        <div class="clinic-map-wrap">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10924.898500518539!2d139.6306958219644!3d35.50448205517649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185e954b4b5c3b%3A0x1f6b4f3c7ad97086!2z44CSMjIyLTAwMTIg56We5aWI5bed55yM5qiq5rWc5biC5riv5YyX5Yy65a-M5aOr5aGa77yR5LiB55uu77yR77yU4oiS77yS77yY!5e0!3m2!1sja!2sjp!4v1789283203711!5m2!1sja!2sjp"
-            width="100%"
-            height="360"
-            style="border:0;"
-            allowfullscreen
-            loading="lazy"
-            referrerpolicy="strict-origin-when-cross-origin"
-            title="石井心療内科の地図"
-          ></iframe>
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- ご予約 -->
-    <section class="section reservation-section" id="reservation">
-      <div class="container">
-
-        <div class="reservation-box">
-          <div>
-            <p class="section-label">RESERVATION</p>
-            <h2 class="section-title">ご予約・お問い合わせ</h2>
-
-            <p>
-              初診・再診ともに、お電話でご予約をお願いいたします。
-            </p>
-
-            <p class="reservation-note">
-              ※WEB予約・LINE予約には対応しておりません。
-            </p>
-          </div>
-
-          <div class="reservation-contact">
-            <p>お電話でご予約ください</p>
-            <a href="tel:0454331420" class="reservation-tel">
-              045-433-1420
-            </a>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-  </main>
-
-
-  <!-- フッター -->
-  <footer class="site-footer">
-    <div class="container">
-
-      <div class="footer-inner">
-        <div>
-          <strong>石井心療内科</strong>
-          <p>心療内科・精神科</p>
-        </div>
-
-        <div class="footer-contact">
-          <p>〒222-0012</p>
-          <p>神奈川県横浜市港北区富士塚1-14-28</p>
-          <a href="tel:0454331420">045-433-1420</a>
-        </div>
-      </div>
-
-      <div class="footer-links">
-        <a href="privacy-policy.html">プライバシーポリシー</a>
-      </div>
-
-      <p class="copyright">
-        &copy; 石井心療内科 All Rights Reserved.
-      </p>
-
-    </div>
-  </footer>
-
-
-  <!-- スマートフォン用固定電話ボタン -->
-  <a href="tel:0454331420" class="mobile-call-button">
-    <span aria-hidden="true">☎</span>
-    電話で予約する
-  </a>
-
-</body>
-</html>
+              <h3>著
