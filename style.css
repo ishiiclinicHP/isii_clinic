@@ -1374,3 +1374,10 @@ img {
     flex-direction: column;
   }
 }
+
+.section-text {
+  max-width: 980px;
+  margin: 0 auto;
+  color: var(--light-text);
+  text-align: center;
+}
