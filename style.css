@@ -1381,3 +1381,8 @@ img {
   color: var(--light-text);
   text-align: center;
 }
+
+.hero-heading-line {
+  display: inline-block;
+  white-space: nowrap;
+}
